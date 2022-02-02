@@ -1,5 +1,8 @@
 FROM node:lts-alpine
 # ENV NODE_ENV=production
+
+ENV CI=true
+
 WORKDIR /app
 # COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
 COPY package.json ./
